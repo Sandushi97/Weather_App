@@ -6,7 +6,7 @@ body {
     margin: 0;
     background: #222;
     font-family: 'Open Sans', sans-serif;
-    background-image: url('ima.jpg');
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -59,7 +59,7 @@ button:hover {
 }
 h1.temp {
     margin: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.4em;
 }
 .flex{
     display: flex;
@@ -68,4 +68,17 @@ h1.temp {
 .description{
     text-transform: capitalize;
     margin-left: 8px;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading....";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }
